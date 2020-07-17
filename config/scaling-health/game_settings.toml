@@ -21,6 +21,7 @@
 	sleepWarningMessage = ""
 	#Every second, this value is added to player and dimension difficulty.
 	#Enter a negative number to subtract difficulty instead.
+	#Default 0.0011575 equals 100 per day and incrases by 1 in 14 minutes
 	changePerSecond = 0.0011575
 	#These players will not gain difficulty. Use either name or UUID.
 	#Note: if non-exempt players are nearby, mobs will still be stronger.
@@ -56,15 +57,15 @@
 		#Time in seconds before afk change kicks in
 		time = 120.0
 		#If true, a comment will appear to notify when you are considered afk
-		message = true
+		message = false
 
 	#Change difficulty when certain things happen
 	#putting in -difficulty- produces no change, putting 0 will reset difficulty after this action
 	[difficulty.mutators]
 		#EvalEx expression: A player sleeps in a bed
-		onPlayerSleep = "difficulty"
+		onPlayerSleep = "difficulty + 0.5"
 		#EvalEx expression: A player dies
-		onPlayerDeath = "difficulty"
+		onPlayerDeath = "difficulty - 2.0"
 		#EvalEx expression: A normal hostile mob is killed by a player
 		onHostileKilled = "difficulty"
 		#EvalEx expression: A player killed another player
@@ -78,7 +79,7 @@
 
 		[[difficulty.mutators.byEntity]]
 			types = ["minecraft:villager"]
-			onKilled = "difficulty + 0.01"
+			onKilled = "difficulty + 2"
 
 	[difficulty.multipliers]
 
@@ -87,7 +88,7 @@
 		#'enabled' must be set to true for this to work.
 		[difficulty.multipliers.lunarCycles]
 			values = [1.5, 1.3, 1.2, 1.0, 0.8, 1.0, 1.2, 1.3]
-			enabled = false
+			enabled = true
 
 		#Set difficulty multipliers based on location. You can match dimensions, biomes, or both.
 		#If either the biomes or dimensions array is empty, it is ignored (matching all)
@@ -137,51 +138,51 @@
 		#Xp scaling for blights, 3 will give 3 more times more xp then another mob on the same difficulty
 		maxBoost = 3.0
 		#Notify everyone that a blight died in combat
-		notifyOnDeath = true
+		notifyOnDeath = false
 		#Multiplier for blight difficulty, 2 will make blights have stats equal to 2 * current difficulty
 		blightModifier = 2.0
 
 		[[mob.blight.potionEffects]]
 			potion = "minecraft:fire_resistance"
-			minDifficulty = 0
+			minDifficulty = 30
 			level = 1
-			durationInMinutes = 5.0
+			durationInMinutes = 3.0
 
 		[[mob.blight.potionEffects]]
 			potion = "minecraft:resistance"
-			minDifficulty = 0
+			minDifficulty = 50
 			level = 1
 			durationInMinutes = 5.0
 
 		[[mob.blight.potionEffects]]
 			potion = "minecraft:speed"
-			minDifficulty = 0
+			minDifficulty = 75
 			level = 4
-			durationInMinutes = 5.0
+			durationInMinutes = 2.0
 
 		[[mob.blight.potionEffects]]
 			potion = "minecraft:strength"
-			minDifficulty = 0
+			minDifficulty = 100
 			level = 2
-			durationInMinutes = 5.0
+			durationInMinutes = 4.0
 
 	[[mob.randomPotionEffects]]
 		potion = "minecraft:speed"
 		minDifficulty = 15
 		level = 1
-		durationInMinutes = 10.0
+		durationInMinutes = 3.0
 
 	[[mob.randomPotionEffects]]
 		potion = "minecraft:speed"
 		minDifficulty = 50
 		level = 2
-		durationInMinutes = 10.0
+		durationInMinutes = 2.0
 
 	[[mob.randomPotionEffects]]
 		potion = "minecraft:strength"
 		minDifficulty = 30
 		level = 1
-		durationInMinutes = 10.0
+		durationInMinutes = 1.0
 
 	[[mob.randomPotionEffects]]
 		potion = "minecraft:fire_resistance"
@@ -191,13 +192,13 @@
 
 	[[mob.randomPotionEffects]]
 		potion = "minecraft:invisibility"
-		minDifficulty = 35
+		minDifficulty = 60
 		level = 1
-		durationInMinutes = 10.0
+		durationInMinutes = 20.0
 
 	[[mob.randomPotionEffects]]
 		potion = "minecraft:resistance"
-		minDifficulty = 40
+		minDifficulty = 70
 		level = 1
 		durationInMinutes = 10.0
 
@@ -205,7 +206,7 @@
 
 	[item.heart_crystal]
 		#The number of levels required to use a heart crystal.
-		levelCost = 3
+		levelCost = 10
 		#The amount of additional health restored by heart crystals.
 		#Heart crystals always restore the amount of health they add, this is a bonus
 		healthRestored = 4.0
@@ -218,9 +219,9 @@
 
 	[item.power_crystal]
 		#The number of levels required to use a power crystal.
-		levelCost = 3
+		levelCost = 30
 		#How much more damage a player deals after using a power crystal.
-		damageBoost = 0.5
+		damageBoost = 2
 
 	[item.chance_heart]
 		#Change in difficulty when a chance heart is used
@@ -276,14 +277,14 @@
 		minHealth = 0
 		maxHealth = 2147483647
 		proportionalToMaxHealth = false
-		initialDelay = 20.0
+		initialDelay = 5.0
 		maxFood = 2147483647
 		tickDelay = 5.0
 		enabled = true
 
 	[player.health]
 		#Starting player health, in half-hearts (20 = 10 hearts)
-		startingHealth = 20
+		startingHealth = 10
 		#EvalEx expression: On death, set the player's max health to this value. By default, there is no change.
 		setOnDeath = "maxHealth"
 		#The minimum amount of health a player can have (this can be lower than starting health)
