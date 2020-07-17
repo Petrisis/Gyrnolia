@@ -1,0 +1,42 @@
+{
+	"parent": "minecraft:villagers/customer",
+    "display": {
+        "title": {
+            "text": "Honest Trader"
+        },
+        "description": {
+            "text": "Gain some Emerald"
+        },
+        "icon": {
+            "item": "minecraft:emerald_ore"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "emer": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:emerald",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "emer"
+        ]
+    ],
+    "rewards": {
+        "experience": 30
+    }
+}

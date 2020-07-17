@@ -1,0 +1,6 @@
+#Enable loose rock spawning. Note: this requires a MC restart to take effect.
+enableLooseRockSpawning = true
+#How common loose rocks are.  Note: this requires a MC restart to take effect.
+#Range: > 0
+looseRockFrequency = 12
+

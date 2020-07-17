@@ -1,0 +1,13 @@
+
+[general]
+	#When you Right Click with Shovel then is the dirt block a path. [default: true]
+	dirt2path = true
+	#You dont become Fall Damage when you have FeatherFalling IV
+	featherfalling = true
+	#No Strawberry Damage when you have a armor. [default: true]
+	strawberrydmg = true
+	#You cant Trample Farmlands without Boots. [default: true]
+	trample = true
+	#Adds Footsteps when you walk. [default: true]
+	footsteps = true
+

@@ -1,0 +1,31 @@
+{
+	"parent": "minecraft:villagers/honest_trader",
+    "display": {
+        "title": {
+            "text": "Meeting Mizab"
+        },
+        "description": {
+            "text": "Find Mizab"
+        },
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "mizab": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "mizab"
+        ]
+    ],
+    "rewards": {
+        "experience": 300
+    }
+}

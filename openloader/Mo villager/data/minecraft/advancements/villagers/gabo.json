@@ -1,0 +1,31 @@
+{
+	"parent": "minecraft:villagers/honest_trader",
+    "display": {
+        "title": {
+            "text": "A Nice Person! Gabo"
+        },
+        "description": {
+            "text": "Find Gabo"
+        },
+        "icon": {
+            "item": "minecraft:smithing_table"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "gabo": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "gabo"
+        ]
+    ],
+    "rewards": {
+        "experience": 120
+    }
+}

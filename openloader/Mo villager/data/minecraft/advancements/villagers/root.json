@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "Mo Villager",
+            "color": "green"
+        },
+        "description": {
+            "text": "You Sucessfully Installed Mo Villager",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+    },
+    "criteria": {
+        "beginning": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "beginning"
+        ]
+    ],
+    "rewards": {
+        "experience": 10
+    }
+}

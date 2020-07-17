@@ -1,0 +1,31 @@
+{
+	"parent": "minecraft:villagers/honest_trader",
+    "display": {
+        "title": {
+            "text": "Is that a DanTDM?"
+        },
+        "description": {
+            "text": "Find Dan"
+        },
+        "icon": {
+            "item": "minecraft:minecart"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "dan": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "dan"
+        ]
+    ],
+    "rewards": {
+        "experience": 130
+    }
+}

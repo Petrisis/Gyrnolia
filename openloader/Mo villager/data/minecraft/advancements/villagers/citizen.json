@@ -1,0 +1,40 @@
+{
+	"parent": "minecraft:villagers/customer",
+    "display": {
+        "title": {
+            "text": "A Good Citizen"
+        },
+        "description": {
+            "text": "Place a Potato in the Village"
+        },
+        "icon": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "citizen": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:wheat_seeds"
+                },
+                "location": {
+                    "dimension": "overworld",
+                    "feature": "Village"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "citizen"
+        ]
+    ],
+    "rewards": {
+        "experience": 60
+    }
+}

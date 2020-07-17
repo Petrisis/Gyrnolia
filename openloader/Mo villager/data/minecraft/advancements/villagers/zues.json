@@ -1,0 +1,31 @@
+{
+	"parent": "minecraft:villagers/honest_trader",
+    "display": {
+        "title": {
+            "text": "A Dog Lover, oww!"
+        },
+        "description": {
+            "text": "Find Zues"
+        },
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "zues": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "zues"
+        ]
+    ],
+    "rewards": {
+        "experience": 120
+    }
+}

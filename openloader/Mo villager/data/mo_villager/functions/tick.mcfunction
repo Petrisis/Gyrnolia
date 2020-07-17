@@ -6,7 +6,7 @@
 ############################################################
 
 #Counts the number of villager in a villager (constant = 4)
-scoreboard players set @a constant 8
+scoreboard players set @a constant 4
 scoreboard players set @a vilCounter 0
 execute as @e[type=minecraft:villager,tag=!lie] run scoreboard players add @p vilCounter 1
 execute if score @p vilCounter >= @p constant run function mo_villager:main

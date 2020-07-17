@@ -1,0 +1,42 @@
+{
+	"parent": "minecraft:villagers/customer",
+    "display": {
+        "title": {
+            "text": "The Defender"
+        },
+        "description": {
+            "text": "Struck Lightning on a Zombie in a Village"
+        },
+        "icon": {
+            "item": "minecraft:trident"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "light": {
+            "trigger": "minecraft:channeled_lightning",
+            "conditions": {
+                "victims": [
+                    {
+                        "type": "minecraft:zombie",
+                        "location": {
+                            "dimension": "overworld",
+                            "feature": "Village"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "light"
+        ]
+    ],
+    "rewards": {
+        "experience": 140
+    }
+}

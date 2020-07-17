@@ -1,0 +1,42 @@
+{
+	"parent": "minecraft:villagers/honest_trader",
+    "display": {
+        "title": {
+            "text": "$Richie Rich$"
+        },
+        "description": {
+            "text": "Make 1 Stack of Emerald Block"
+        },
+        "icon": {
+            "item": "minecraft:emerald_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "craft": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:emerald_block",
+                        "count": {
+                            "min": 64,
+                            "max": 64
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft"
+        ]
+    ],
+    "rewards": {
+        "experience": 200
+    }
+}

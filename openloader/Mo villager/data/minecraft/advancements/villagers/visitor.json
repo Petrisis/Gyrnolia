@@ -1,0 +1,35 @@
+{
+	"parent": "minecraft:villagers/root",
+    "display": {
+        "title": {
+            "text": "A Visiter! Awesome"
+        },
+        "description": {
+            "text": "Locate a Village"
+        },
+        "icon": {
+            "item": "minecraft:oak_door"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "locate": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "overworld",
+                "feature": "Village"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "locate"
+        ]
+    ],
+    "rewards": {
+        "experience": 60
+    }
+}

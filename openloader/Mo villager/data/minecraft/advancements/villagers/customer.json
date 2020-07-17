@@ -1,0 +1,36 @@
+{
+	"parent": "minecraft:villagers/visitor",
+    "display": {
+        "title": {
+            "text": "Customer"
+        },
+        "description": {
+            "text": "Make a Trade"
+        },
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trading": {
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "villager": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trading"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
+}

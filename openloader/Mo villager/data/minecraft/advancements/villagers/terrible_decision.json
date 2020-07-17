@@ -1,0 +1,36 @@
+{
+	"parent": "minecraft:villagers/customer",
+    "display": {
+        "title": {
+            "text": "Terrible Decision :("
+        },
+        "description": {
+            "text": "Kill a Villager"
+        },
+        "icon": {
+            "item": "minecraft:fire_charge"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "killing": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "killing"
+        ]
+    ],
+    "rewards": {
+        "experience": 50
+    }
+}

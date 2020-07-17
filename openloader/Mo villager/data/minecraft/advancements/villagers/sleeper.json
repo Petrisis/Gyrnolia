@@ -1,0 +1,35 @@
+{
+	"parent": "minecraft:villagers/customer",
+    "display": {
+        "title": {
+            "text": "A Village Nap!"
+        },
+        "description": {
+            "text": "Sleep in the Village"
+        },
+        "icon": {
+            "item": "minecraft:yellow_bed"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sleeper": {
+            "trigger": "minecraft:slept_in_bed",
+            "conditions": {
+                "dimension": "overworld",
+                "feature": "Desert_Pyramid"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sleeper"
+        ]
+    ],
+    "rewards": {
+        "experience": 45
+    }
+}
