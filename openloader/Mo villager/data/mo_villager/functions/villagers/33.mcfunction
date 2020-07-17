@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/ice_maker
+function mo_villager:villagers/ac_villagers/lumberjack
+function mo_villager:villagers/ac_villagers/head_seller

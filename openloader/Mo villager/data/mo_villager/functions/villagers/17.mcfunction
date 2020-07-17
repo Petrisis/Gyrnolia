@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/mob_hunter
+function mo_villager:villagers/ac_villagers/enchanter_2
+function mo_villager:villagers/ac_villagers/ice_maker

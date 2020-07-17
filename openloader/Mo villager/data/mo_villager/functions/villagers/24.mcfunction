@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/combat_enchanter
+function mo_villager:villagers/ac_villagers/hunter
+function mo_villager:villagers/ac_villagers/engineer

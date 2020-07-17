@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/desert_explorer
+function mo_villager:villagers/ac_villagers/mushroom
+function mo_villager:villagers/ac_villagers/hunter

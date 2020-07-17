@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/mob_hunter
+function mo_villager:villagers/ac_villagers/egg
+function mo_villager:villagers/ac_villagers/head_seller

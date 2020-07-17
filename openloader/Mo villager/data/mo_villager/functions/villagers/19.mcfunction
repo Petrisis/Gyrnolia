@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/firework
+function mo_villager:villagers/ac_villagers/cynophilist
+function mo_villager:villagers/ac_villagers/glazed_terracotta_seller

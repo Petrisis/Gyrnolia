@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/furnace_engineer
+function mo_villager:villagers/ac_villagers/terracotta_seller
+function mo_villager:villagers/ac_villagers/combat_enchanter

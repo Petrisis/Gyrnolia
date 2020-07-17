@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/disc_seller
+function mo_villager:villagers/ac_villagers/egg
+function mo_villager:villagers/ac_villagers/redstoner

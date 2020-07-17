@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/ice_maker
+function mo_villager:villagers/ac_villagers/miner
+function mo_villager:villagers/ac_villagers/fruiterer

@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/merchant
+function mo_villager:villagers/ac_villagers/emerald_exchanger
+function mo_villager:villagers/ac_villagers/ice_maker

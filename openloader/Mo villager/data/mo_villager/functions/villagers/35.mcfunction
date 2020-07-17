@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/dye_seller
+function mo_villager:villagers/ac_villagers/fruiterer
+function mo_villager:villagers/ac_villagers/mob_hunter

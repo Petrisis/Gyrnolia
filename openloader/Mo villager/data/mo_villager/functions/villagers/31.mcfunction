@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/armour_enchanter
+function mo_villager:villagers/ac_villagers/emerald_exchanger
+function mo_villager:villagers/ac_villagers/griefer

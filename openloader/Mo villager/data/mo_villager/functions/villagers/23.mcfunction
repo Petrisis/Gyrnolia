@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/beekeeper
+function mo_villager:villagers/ac_villagers/fruiterer
+function mo_villager:villagers/ac_villagers/brewer

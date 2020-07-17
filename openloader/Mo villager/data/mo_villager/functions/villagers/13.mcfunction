@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/miner
+function mo_villager:villagers/ac_villagers/enchanter_1
+function mo_villager:villagers/ac_villagers/emerald_exchanger

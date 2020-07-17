@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/dye_seller
+function mo_villager:villagers/ac_villagers/quartz_seller
+function mo_villager:villagers/ac_villagers/railman

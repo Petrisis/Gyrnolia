@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/fruiterer
+function mo_villager:villagers/ac_villagers/firework
+function mo_villager:villagers/ac_villagers/end_explorer

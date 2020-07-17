@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/breeder
+function mo_villager:villagers/ac_villagers/griefer
+function mo_villager:villagers/ac_villagers/merchant

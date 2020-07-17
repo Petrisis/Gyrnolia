@@ -1,0 +1,3 @@
+function mo_villager:villagers/ac_villagers/dye_seller
+function mo_villager:villagers/ac_villagers/concrete_seller
+function mo_villager:villagers/ac_villagers/merchant
