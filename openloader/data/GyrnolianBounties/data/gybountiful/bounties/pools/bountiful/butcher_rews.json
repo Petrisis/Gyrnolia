@@ -1,0 +1,19 @@
+{
+  "content": [
+    {
+      "type": "item",
+      "content": "minecraft:emerald",
+      "nbt": {
+        "display": {
+          "Name": "{\"text\":\"Butcher\u0027s Coins\"}"
+        }
+      },
+      "amountRange": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 2500,
+      "weight": 1000
+    }
+  ]
+}

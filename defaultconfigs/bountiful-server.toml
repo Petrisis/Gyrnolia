@@ -34,7 +34,7 @@
 	#"bountiful/decrees/*" would block all default Bountiful decree data from loading,
 	#"bountiful/*/apotheosis" would block Bountiful from loading data in
 	#"bountiful/bounties/pools/apotheosis" as well as "bountiful/bounties/decrees/apotheosis".
-	blacklistedData = []
+	blacklistedData = ["bountiful/*/*"]
 
 [bounties]
 	#If true, you can fulfill bounties by right clicking on a bounty board.
@@ -49,7 +49,7 @@
 	rarityTierUpChance = 0.1
 	#A global multiplier for the time needed to complete a bounty.
 	#Range: 1.0 ~ 10000.0
-	timeMultiplier = 7.5
+	timeMultiplier = 2
 	#The ratio of balance between bounty objectives and rewards.
 	#Numbers above 1.0 will give bounties higher requirements to complete,
 	#and numbers below 1.0 will give bounties lower requirements to complete.

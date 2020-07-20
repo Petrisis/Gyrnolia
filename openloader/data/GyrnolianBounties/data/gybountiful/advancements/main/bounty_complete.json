@@ -1,0 +1,28 @@
+{
+  "parent": "gybountiful:main/root",
+  "display": {
+    "icon": {
+      "item": "gybountiful:bounty"
+    },
+    "title": {
+      "translate": "bountiful.advancement.bounty_complete.title"
+    },
+    "description": {
+      "translate": "bountiful.advancement.bounty_complete.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "finish_it": {
+      "trigger": "gybountiful:bounty_complete"
+    }
+  },
+  "requirements": [
+    [
+      "finish_it"
+    ]
+  ]
+}

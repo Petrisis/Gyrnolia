@@ -21,7 +21,6 @@
 	sleepWarningMessage = ""
 	#Every second, this value is added to player and dimension difficulty.
 	#Enter a negative number to subtract difficulty instead.
-	#Default 0.0011575 equals 100 per day and incrases by 1 in 14 minutes
 	changePerSecond = 0.0011575
 	#These players will not gain difficulty. Use either name or UUID.
 	#Note: if non-exempt players are nearby, mobs will still be stronger.
@@ -221,7 +220,7 @@
 		#The number of levels required to use a power crystal.
 		levelCost = 30
 		#How much more damage a player deals after using a power crystal.
-		damageBoost = 2
+		damageBoost = 0.5
 
 	[item.chance_heart]
 		#Change in difficulty when a chance heart is used
